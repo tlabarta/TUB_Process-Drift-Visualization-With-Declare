@@ -1,8 +1,8 @@
-from src.auxiliary.minerful_adapter import prune_constraints_minerful
-from src.data_algorithms_cluster_and_change_point import calculate_erratic_value
-from src.data_exporters.export_csv import export_one_line_csvs, export_many_line_csvs
-from src.data_exporters.export_json import export_constraints_per_cluster
-from src.visualize_drift_plot import draw_drift_plot_for_one_cluster
+from auxiliary.minerful_adapter import prune_constraints_minerful
+from data_algorithms_cluster_and_change_point import calculate_erratic_value
+from data_exporters.export_csv import export_one_line_csvs, export_many_line_csvs
+from data_exporters.export_json import export_constraints_per_cluster
+from visualize_drift_plot import draw_drift_plot_for_one_cluster
 
 def process_constraint_clusters(fileMngm,
                                 cluster_order,
@@ -37,7 +37,7 @@ def process_constraint_clusters(fileMngm,
                                                         key=i,
                                                         vertical=horisontal_separation_bounds_by_cluster,
                                                         file_ind=j,
-                                                        fileMngm = fileMngm)
+                                                        fileMngm=fileMngm)
 
         # export here the timeseries from each cluster
         export_one_line_csvs(averaged_line,

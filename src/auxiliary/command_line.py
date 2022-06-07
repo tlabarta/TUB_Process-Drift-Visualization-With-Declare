@@ -10,13 +10,13 @@ Author:  Anton Yeshchenko
 # lib documentation
 # https://pymotw.com/2/argparse/
 import argparse
-from src.auxiliary.data_structures import FilesManagement, AlgorithmParameters
+from auxiliary.data_structures import FilesManagement, AlgorithmParameters
 
 def get_commandline_parameters():
     parser = argparse.ArgumentParser()
     # These are the argument list  of the import subprocess script
-    parser.add_argument("-logName", help="the log name", default="italian_help_desk")
-    parser.add_argument("-subL", type=int, default=100,help="Window size for slicing the log")
+    parser.add_argument("-logName", help="the log name", default="log_augur_filtered_csv_1_xes")
+    parser.add_argument("-subL", type=int, default=100, help="Window size for slicing the log")
     parser.add_argument("-sliBy", type=int, default=50)
     parser.add_argument("-cluCut", type=int, default=300, help="Cutoff threshold for cluster algorithm")
     parser.add_argument('-driftAll', action='store_true', default=False,

@@ -1,4 +1,4 @@
-from src.auxiliary.constant_definitions import NAME_FILE_SEPARATOR
+from auxiliary.constant_definitions import NAME_FILE_SEPARATOR
 
 def compose_name(*argv):
     name = ''

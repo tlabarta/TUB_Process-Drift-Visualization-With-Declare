@@ -15,17 +15,17 @@ examples to run:
 -logName bastian -subL 100 -sliBy 50 -cluCut 1200
 Author:  Anton Yeshchenko
 '''
-
-from src.agregated_functions import process_constraint_clusters
-from src.auxiliary.mine_features_from_data import save_separately_timestamp_for_each_constraint_window
-from src.data_algorithms_cluster_and_change_point import do_cluster_changePoint
-from src.auxiliary.command_line import get_commandline_parameters
-from src.visualize_drift_map import draw_drift_map_with_clusters
-from src.data_exporters.export_csv import export_one_line_csvs
-from src.data_exporters.export_xes import export_xes_log
-from src.data_importers.import_csv import import_timestamp_ticks, import_check, import_minerful_constraints_timeseries_data
-from src.data_importers.import_xes import import_xes_and_sort_timestamp, import_xes
-from src.auxiliary.minerful_adapter import mine_minerful_for_declare_constraints
+#import src
+from agregated_functions import process_constraint_clusters
+from auxiliary.mine_features_from_data import save_separately_timestamp_for_each_constraint_window
+from data_algorithms_cluster_and_change_point import do_cluster_changePoint
+from auxiliary.command_line import get_commandline_parameters
+from visualize_drift_map import draw_drift_map_with_clusters
+from data_exporters.export_csv import export_one_line_csvs
+from data_exporters.export_xes import export_xes_log
+from data_importers.import_csv import import_timestamp_ticks, import_check, import_minerful_constraints_timeseries_data
+from data_importers.import_xes import import_xes_and_sort_timestamp, import_xes
+from auxiliary.minerful_adapter import mine_minerful_for_declare_constraints
 
 fileMngm, algoPrmts = get_commandline_parameters()
 
@@ -59,7 +59,7 @@ draw_drift_map_with_clusters(constraints,
                              ts=ts_ticks,
                              y_lines=cluster_bounds,
                              x_lines_all=horisontal_separation_bounds_by_cluster,
-                             cluster_order = cluster_order)
+                             cluster_order=cluster_order)
 
 print("- - - start processing the timeseries in clusters" )
 # handle now each cluster of constraints in the following function
@@ -69,7 +69,7 @@ process_constraint_clusters(fileMngm,
                             ts_ticks,
                             clusters_dict,
                             horisontal_separation_bounds_by_cluster,
-                            erratic_measure_out = True,
-                            export_constraints = True,
-                            export_constraints_simplified = True)
+                            erratic_measure_out=True,
+                            export_constraints=True,
+                            export_constraints_simplified=True)
 
