@@ -5,7 +5,7 @@ from pm4py.objects.log.importer.xes import importer as xes_import_factory
 from pm4py.algo.discovery.heuristics import algorithm as heuristics_miner
 from pm4py.visualization.heuristics_net import visualizer as hn_vis_factory
 import pm4py_modified_scripts.factory_pm4py as hn_vis_factory
-from src.data_importers.import_csv import import_check, import_constraints_to_dictionary
+from data_importers.import_csv import import_check, import_constraints_to_dictionary
 
 
 def visualize_dfg_with_constraints(fileMngm):

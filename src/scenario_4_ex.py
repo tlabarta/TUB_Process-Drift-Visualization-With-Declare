@@ -3,11 +3,11 @@ Augmented Dickey-Fuller test
 '''
 import csv
 import numpy as np
-from src.auxiliary.command_line import get_commandline_parameters
+from auxiliary.command_line import get_commandline_parameters
 from pandas import read_csv
 from statsmodels.tsa.stattools import adfuller
 # https://machinelearningmastery.com/time-series-data-stationary-python/
-from src.data_importers.import_csv import import_check
+from data_importers.import_csv import import_check
 
 fileMngm, algoPrmts = get_commandline_parameters()
 

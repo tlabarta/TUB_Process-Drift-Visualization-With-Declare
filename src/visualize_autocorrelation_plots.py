@@ -2,7 +2,7 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
-from src.data_importers.import_csv import import_check
+from data_importers.import_csv import import_check
 # function from here: https://www.statsmodels.org/stable/generated/statsmodels.graphics.tsaplots.plot_acf.html
 # info  https://towardsdatascience.com/almost-everything-you-need-to-know-about-time-series-860241bdc578
 # https://campus.datacamp.com/courses/visualizing-time-series-data-in-python/seasonality-trend-and-noise?ex=1
