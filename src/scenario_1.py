@@ -7,7 +7,7 @@ examples to run:
 -logName bpi_challenge_2013_incidents -subL 400 -sliBy 150 -cluCut 500
 -logName Sepsis -subL 50 -sliBy 25 -cluCut 600
 -logName ConditionalRemoval -subL 1000 -sliBy 500  -cluCut 600
--logName Loop -subL 800 -sliBy 400  -cluCut 600
+-logName Loop -subL 800 -sliBy 400  -cluCut 600ç
 -logName italian_help_desk -subL 200  -sliBy 75  -cluCut 300
 -logName OIR -subL 400  -sliBy 200  -cluCut 500
 -logName bpic_2011_hospital -subL 40 -sliBy 20 -cluCut 1200 <<<<<<---
